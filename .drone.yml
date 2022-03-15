@@ -13,6 +13,7 @@ steps:
   - ls /etc/ssl/certs
   
 - name: another
+  image: alpine
   commands:
   - ls /etc/ssl/certs/another.pem
   - ls /etc/ssl/certs/another2.pem
