@@ -1,9 +1,20 @@
 ---
 kind: pipeline
-type: exec
+type: aws
 name: default
+
+pool:
+  use: ubuntuvistaar99
 
 steps:
 - name: greeting
   commands:
   - echo "hey"
+  - ls /etc/ssl/certs
+  
+- name: another
+  commands:
+  - ls /etc/ssl/certs/another.pem
+  - ls /etc/ssl/certs/another2.pem
+  - cat /etc/ssl/certs/another.pem
+  - cat /etc/ssl/certs/another2.pem
