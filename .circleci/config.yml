@@ -14,16 +14,14 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-          name: "Say hello"
-          command: |
-            "echo Hello, World!"
-            ls
-            "echo how's it going"
-            "echo "blah"
-            ls
-            "echo hey2"
-            pwd
+      - run: |
+          "echo Hello, World!"
+          ls
+          "echo how's it going"
+          "echo "blah"
+          ls
+          "echo hey2"
+          pwd
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
