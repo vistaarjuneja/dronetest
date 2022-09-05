@@ -19,10 +19,10 @@ jobs:
           command: |
             "echo Hello, World!"
             ls
-            echo "how's it going"
-            echo "blah"
+            "echo how's it going"
+            "echo "blah"
             ls
-            echo "hey2"
+            "echo hey2"
             pwd
 
 # Invoke jobs via workflows
