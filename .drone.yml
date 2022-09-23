@@ -4,7 +4,7 @@ type: aws
 name: default
 
 pool:
-  use: ubuntuvistaar99
+  use: linux-amd64
 
 steps:
 - name: greeting
