@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "Say hello test"
           command: echo $val && echo $val2 
 
 # Orchestrate jobs using workflows
