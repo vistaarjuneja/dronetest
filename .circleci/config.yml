@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello test"
+          name: "Say hello test new"
           command: echo $val | base64
 
 # Orchestrate jobs using workflows
