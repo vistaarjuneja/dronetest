@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello test new"
-          command: echo $val | base64 
+          command: echo $val
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
