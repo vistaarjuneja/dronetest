@@ -15,9 +15,7 @@ jobs:
     steps:
       - checkout
       - run: |
-           echo "hey"
-           echo $val
-           blah
+           echo {"key": "val"}
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
