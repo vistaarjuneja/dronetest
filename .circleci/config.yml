@@ -14,9 +14,10 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-          name: "Say hello test new"
-          command: echo $val
+      - run: |
+           echo "hey"
+           echo $val
+           echo "done"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
