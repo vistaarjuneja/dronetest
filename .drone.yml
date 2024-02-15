@@ -4,15 +4,10 @@ type: docker
 name: default
 
 steps:
-- name: greeting
-  commands:
-  - echo "hey"
-  - ls /etc/ssl/certs
-  
-- name: another
+- name: step1
   image: alpine
   commands:
-  - ls /etc/ssl/certs/another.pem
-  - ls /etc/ssl/certs/another2.pem
-  - cat /etc/ssl/certs/another.pem
-  - cat /etc/ssl/certs/another2.pem
+  - echo "Hey, what's up"
+  - sleep 2
+  - echo "I'm sam"
+  - sleep 1
