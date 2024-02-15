@@ -1,10 +1,7 @@
 ---
 kind: pipeline
-type: vm
+type: docker
 name: default
-
-pool:
-  use: linux-amd64
 
 steps:
 - name: greeting
