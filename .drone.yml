@@ -4,11 +4,6 @@ type: docker
 name: default
 
 steps:
-- name: greeting
-  commands:
-  - echo "hey"
-  - ls /etc/ssl/certs
-  
 - name: another
   image: alpine
   commands:
