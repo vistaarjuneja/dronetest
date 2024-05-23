@@ -12,5 +12,5 @@ steps:
   image: alpine
   commands:
   - echo "Hello"
-  - sleep 2
+  - sleep 500
   - echo "Done"
