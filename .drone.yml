@@ -16,13 +16,10 @@ steps:
   image: alpine
   environment:
     MY_SECRET:
-      from_secret: password123
+      from_secret: check
   commands:
     - echo "$MY_SECRET" >> .secrets
 - name: cat
   image: alpine
   commands:
     - cat .secrets
-  environment:
-    MY_SECRET:
-      from_secret: password123
