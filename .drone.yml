@@ -23,3 +23,6 @@ steps:
   image: alpine
   commands:
     - cat .secrets
+  environment:
+    MY_SECRET:
+      from_secret: password123
