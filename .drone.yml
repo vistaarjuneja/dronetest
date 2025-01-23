@@ -20,5 +20,6 @@ steps:
   commands:
     - echo "$MY_SECRET" >> .secrets
 - name: cat
+  image: alpine
   commands:
     - cat .secrets
