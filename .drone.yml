@@ -12,15 +12,13 @@ steps:
   image: alpine
   commands:
   - echo "Hello"
-- name: build
+- name: save-to-file
   image: alpine
   environment:
-    USERNAME:
-      from_secret: passwordmax
-    PASSWORD:
+    MY_SECRET:
       from_secret: password123
   commands:
-    - echo "You can call the secrets like this examples below."
-    - echo $USERNAME
-    - echo $PASSWORD
-    - echo "In both cases, and for security reasons, you will see asteriks '*******' instead the value under the echo command."
+    - echo "$MY_SECRET" >> .secrets
+- name: cat
+  commands:
+    - cat .secrets
